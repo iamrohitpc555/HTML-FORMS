@@ -31,3 +31,13 @@
             if(phoneRegex.test(phone.value))
             phoneError.textContent = "Phone is Invalid"
         })
+
+        //validate password
+
+        const pass = document.querySelector('#pwd')
+        const passError = document.querySelector('.pass-error')
+        pass.addEventListener('input',function() {
+            let passRegex = RegExp("^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=\\.~`])(.){8,}$")
+            if(passRegex.test(pass.value))
+            passError.textContent = "Password is invalid"
+        })
