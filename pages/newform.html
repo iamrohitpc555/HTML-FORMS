@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Input Type</title>
+    <link rel="stylesheet" href="../css/simple_form.css">
+</head>
+<body>
+    <form>
+        <header class="headerContainer"><h1> HTML 5 FORM INPUT FILEDS</h1></header>
+        <div>
+            <label for="text">Text Input For Name</label>
+            <input type="text" name="text" id="text">
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+
+        <div>
+            <label for="pwd">password input type:</label>
+            <input type="password" name="pwd" id="pwd">
+        </div>
+
+        <div>
+            <label for="email">email input type:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="url">irl input type:</label>
+            <input type="url" name="url" id="url">
+        </div>
+
+        <div>
+            <label for="number">number input type</label>
+            <input type="number" name="number" id="number">
+        </div>
+
+        <div>
+            <label for="tel">tel input type:</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+
+        <div>
+            <label for="search">search input type:</label>
+            <input type="search" name="search" id="search">
+        </div>
+
+        <div class="nativeDateTimePicker">
+            <label for="startDate">Choose a Date & Time:</label>
+            <input type="datetime-local" id="startDate" name="startDate" required>
+            <span class="validity"></span>
+        </div>
+
+        <div>
+            <label for="salary">Choose Your Salary:</label>
+            <input type="range" id="salary" name="salary" min="300000" max="500000" step="100" value="400000" required>
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+
+        <div>
+            <button>Submit</button>
+        </div>
+
+    </form>
+    <script src="../js/form.js" type="text/javascript"></script>
+</body>
+</html>
